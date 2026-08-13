@@ -16,6 +16,8 @@ The first step with `conclusion=failure` is a navigation aid. It is not called a
 
 The GitHub runs endpoint uses page-based retrieval. Because the repository remains active, new runs can enter while pages are fetched. The manifest therefore records the selection exactly, and validation checks uniqueness. A production collector would poll incrementally by run ID/time and store a durable high-water mark.
 
+Job retrieval follows `total_count` across every page for each captured failed run. The manifest stores the expected job count by run, allowing validation to detect silent truncation or incomplete coverage.
+
 ## Privacy decision
 
 Only metadata already visible in the public Actions interface is stored. Logs were excluded because they can contain noisy environment details and are unnecessary for demonstrating honest run/job/step aggregation.
