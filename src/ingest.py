@@ -16,6 +16,19 @@ def gh(path):
     return json.loads(result.stdout)
 
 
+def fetch_all_jobs(run_id, endpoints):
+    jobs = []
+    page = 1
+    while True:
+        endpoint = f"repos/{REPOSITORY}/actions/runs/{run_id}/jobs?per_page=100&page={page}"
+        payload = gh(endpoint)
+        endpoints.append(endpoint)
+        jobs.extend(payload["jobs"])
+        if len(jobs) >= payload["total_count"]:
+            return jobs, payload["total_count"]
+        page += 1
+
+
 def main():
     RAW.mkdir(parents=True, exist_ok=True)
     runs = []
@@ -30,13 +43,13 @@ def main():
         "updated_at", "head_branch", "head_sha", "run_attempt", "html_url")}
         for run in runs]
     jobs = []
+    job_counts_by_run = {}
     for run in selected_runs:
         if run["conclusion"] != "failure":
             continue
-        endpoint = f"repos/{REPOSITORY}/actions/runs/{run['id']}/jobs?per_page=100"
-        payload = gh(endpoint)
-        endpoints.append(endpoint)
-        for job in payload["jobs"]:
+        run_jobs, total_count = fetch_all_jobs(run["id"], endpoints)
+        job_counts_by_run[str(run["id"])] = total_count
+        for job in run_jobs:
             jobs.append({
                 "run_id": run["id"], "job_id": job["id"], "name": job["name"],
                 "status": job["status"], "conclusion": job["conclusion"],
@@ -58,6 +71,7 @@ def main():
         "workflow_runs": len(selected_runs),
         "failed_runs": sum(run["conclusion"] == "failure" for run in selected_runs),
         "failed_run_jobs": len(jobs),
+        "job_counts_by_failed_run": job_counts_by_run,
         "endpoints": endpoints,
         "sha256": {
             runs_path.name: hashlib.sha256(runs_path.read_bytes()).hexdigest(),
