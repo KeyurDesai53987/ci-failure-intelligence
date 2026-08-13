@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="100%" height="100%" fill="#F8FAFC"/>
+<text x="150" y="48" font-family="Arial" font-size="30" font-weight="700" fill="#172B4D">First failed step in failed jobs</text>
+<text x="150" y="80" font-family="Arial" font-size="16" fill="#5E6C84">Triage signatures from 181 failed jobs; step names are not root-cause labels</text>
+<rect x="178.5" y="172.1739130434782" width="78.71428571428571" height="347.8260869565218" rx="5" fill="#D64550"/>
+<text x="217.85714285714286" y="162.1739130434782" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">66</text>
+<text x="217.85714285714286" y="550" text-anchor="middle" font-family="Arial" font-size="14">Test (parallel)</text>
+<rect x="314.2142857142857" y="251.2252964426877" width="78.71428571428571" height="268.7747035573123" rx="5" fill="#D64550"/>
+<text x="353.57142857142856" y="241.2252964426877" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">51</text>
+<text x="353.57142857142856" y="550" text-anchor="middle" font-family="Arial" font-size="14">Test</text>
+<rect x="449.92857142857144" y="398.78787878787875" width="78.71428571428571" height="121.21212121212123" rx="5" fill="#D64550"/>
+<text x="489.2857142857143" y="388.78787878787875" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">23</text>
+<text x="489.2857142857143" y="550" text-anchor="middle" font-family="Arial" font-size="14">Run Tests</text>
+<rect x="585.6428571428571" y="435.6785243741765" width="78.71428571428571" height="84.32147562582347" rx="5" fill="#D64550"/>
+<text x="625.0" y="425.6785243741765" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">16</text>
+<text x="625.0" y="550" text-anchor="middle" font-family="Arial" font-size="14">Create Pixi env</text>
+<rect x="721.3571428571429" y="467.2990777338603" width="78.71428571428571" height="52.70092226613966" rx="5" fill="#D64550"/>
+<text x="760.7142857142858" y="457.2990777338603" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">10</text>
+<text x="760.7142857142858" y="550" text-anchor="middle" font-family="Arial" font-size="14">Build pandas</text>
+<rect x="857.0714285714287" y="498.9196310935441" width="78.71428571428571" height="21.080368906455867" rx="5" fill="#D64550"/>
+<text x="896.4285714285716" y="488.9196310935441" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">4</text>
+<text x="896.4285714285716" y="550" text-anchor="middle" font-family="Arial" font-size="14">Test Pyodide</text>
+<rect x="992.7857142857143" y="504.1897233201581" width="78.71428571428571" height="15.810276679841898" rx="5" fill="#D64550"/>
+<text x="1032.142857142857" y="494.1897233201581" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">3</text>
+<text x="1032.142857142857" y="550" text-anchor="middle" font-family="Arial" font-size="14">Build documentation</text>
+</svg>

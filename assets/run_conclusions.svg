@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="100%" height="100%" fill="#F8FAFC"/>
+<text x="150" y="48" font-family="Arial" font-size="30" font-weight="700" fill="#172B4D">Observed workflow conclusions</text>
+<text x="150" y="80" font-family="Arial" font-size="16" fill="#5E6C84">300 completed pandas-dev/pandas runs retrieved from the GitHub REST API</text>
+<rect x="199.875" y="185.34914361001313" width="137.75" height="334.65085638998687" rx="5" fill="#6554C0"/>
+<text x="268.75" y="175.34914361001313" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">127</text>
+<text x="268.75" y="550" text-anchor="middle" font-family="Arial" font-size="14">Success</text>
+<rect x="437.375" y="467.2990777338603" width="137.75" height="52.70092226613966" rx="5" fill="#6554C0"/>
+<text x="506.25" y="457.2990777338603" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">20</text>
+<text x="506.25" y="550" text-anchor="middle" font-family="Arial" font-size="14">Failure</text>
+<rect x="674.875" y="464.6640316205534" width="137.75" height="55.33596837944665" rx="5" fill="#6554C0"/>
+<text x="743.75" y="454.6640316205534" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">21</text>
+<text x="743.75" y="550" text-anchor="middle" font-family="Arial" font-size="14">Cancelled</text>
+<rect x="912.375" y="172.1739130434782" width="137.75" height="347.8260869565218" rx="5" fill="#6554C0"/>
+<text x="981.25" y="162.1739130434782" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700">132</text>
+<text x="981.25" y="550" text-anchor="middle" font-family="Arial" font-size="14">Skipped</text>
+</svg>

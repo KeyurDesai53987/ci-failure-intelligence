@@ -1,0 +1,13 @@
+workflow,observed_runs,success,failure,cancelled,skipped,failure_rate_decisive_runs
+Unit Tests,28,14,10,4,0,0.4166666666666667
+Doc Build and Upload,33,26,5,2,0,0.16129032258064516
+Code Checks,29,22,3,4,0,0.12
+Package Checks,59,10,1,0,48,0.09090909090909091
+Clean closed branch caches,6,5,1,0,0,0.16666666666666666
+Wheel builder,58,2,0,11,45,0.0
+GitHub Actions Security Analysis with zizmor 🌈,36,36,0,0,0,0.0
+Comment Commands,36,1,0,0,35,0.0
+Deprecations Bot,6,6,0,0,0,0.0
+Issue and PR maintenance,4,0,0,0,4,
+PR Issue Assignment Gate,4,4,0,0,0,0.0
+Graph Update: pip in /. #1491700999,1,1,0,0,0,0.0

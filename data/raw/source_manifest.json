@@ -1,0 +1,40 @@
+{
+  "source": "GitHub REST API",
+  "repository": "pandas-dev/pandas",
+  "documentation": "https://docs.github.com/en/rest/actions/workflow-runs",
+  "retrieved_utc": "2026-08-13T13:02:39Z",
+  "selection": "first 3 pages of completed workflow runs, 100 per page, at retrieval time",
+  "workflow_runs": 300,
+  "failed_runs": 20,
+  "failed_run_jobs": 430,
+  "endpoints": [
+    "repos/pandas-dev/pandas/actions/runs?per_page=100&page=1&status=completed",
+    "repos/pandas-dev/pandas/actions/runs?per_page=100&page=2&status=completed",
+    "repos/pandas-dev/pandas/actions/runs?per_page=100&page=3&status=completed",
+    "repos/pandas-dev/pandas/actions/runs/30383782052/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31647577477/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31646437099/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31626001230/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31626001202/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31626001236/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31625040505/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31622148199/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31622148338/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31621904059/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31621904041/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31621826740/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31621826720/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31618590899/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31618590893/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31618591066/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31615138915/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31608469443/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31591620808/jobs?per_page=100",
+    "repos/pandas-dev/pandas/actions/runs/31590773648/jobs?per_page=100"
+  ],
+  "sha256": {
+    "workflow_runs.json": "dab36410d4b23968b308fa24eea1ff47b8ec23965038dccec84a2a903aec5f3b",
+    "failed_run_jobs.json": "da04c61c07f14888842e6bc21ba8d8a97e45ab8f57895e16725df83302270580"
+  },
+  "privacy": "Only metadata already public in pandas-dev/pandas Actions was collected; logs were not downloaded."
+}

@@ -1,0 +1,166 @@
+{
+  "observed_runs": 300,
+  "conclusions": {
+    "success": 127,
+    "skipped": 132,
+    "cancelled": 21,
+    "failure": 20
+  },
+  "decisive_failure_rate": 0.1360544217687075,
+  "all_run_duration_minutes": {
+    "median": 0.175,
+    "p90": 32.345000000000006
+  },
+  "decisive_run_duration_minutes": {
+    "median": 11.066666666666666,
+    "p90": 49.156666666666666
+  },
+  "failed_run_jobs_observed": 430,
+  "failed_jobs": 181,
+  "first_failed_step_signatures": [
+    [
+      "Test (not single_cpu)",
+      66
+    ],
+    [
+      "Test",
+      51
+    ],
+    [
+      "Run Tests",
+      23
+    ],
+    [
+      "Create virtual environment with Pixi",
+      16
+    ],
+    [
+      "Build pandas",
+      10
+    ],
+    [
+      "Test pandas for Pyodide",
+      4
+    ],
+    [
+      "Build documentation",
+      3
+    ],
+    [
+      "Build environment",
+      2
+    ],
+    [
+      "Pip install with extra",
+      2
+    ],
+    [
+      "Clean closed pull request caches",
+      1
+    ],
+    [
+      "Build Environment",
+      1
+    ],
+    [
+      "Run doctests",
+      1
+    ],
+    [
+      "Run ASV benchmarks",
+      1
+    ]
+  ],
+  "workflows_with_most_failures": [
+    {
+      "workflow": "Unit Tests",
+      "observed_runs": 28,
+      "success": 14,
+      "failure": 10,
+      "cancelled": 4,
+      "skipped": 0,
+      "failure_rate_decisive_runs": 0.4166666666666667
+    },
+    {
+      "workflow": "Doc Build and Upload",
+      "observed_runs": 33,
+      "success": 26,
+      "failure": 5,
+      "cancelled": 2,
+      "skipped": 0,
+      "failure_rate_decisive_runs": 0.16129032258064516
+    },
+    {
+      "workflow": "Code Checks",
+      "observed_runs": 29,
+      "success": 22,
+      "failure": 3,
+      "cancelled": 4,
+      "skipped": 0,
+      "failure_rate_decisive_runs": 0.12
+    },
+    {
+      "workflow": "Package Checks",
+      "observed_runs": 59,
+      "success": 10,
+      "failure": 1,
+      "cancelled": 0,
+      "skipped": 48,
+      "failure_rate_decisive_runs": 0.09090909090909091
+    },
+    {
+      "workflow": "Clean closed branch caches",
+      "observed_runs": 6,
+      "success": 5,
+      "failure": 1,
+      "cancelled": 0,
+      "skipped": 0,
+      "failure_rate_decisive_runs": 0.16666666666666666
+    },
+    {
+      "workflow": "Wheel builder",
+      "observed_runs": 58,
+      "success": 2,
+      "failure": 0,
+      "cancelled": 11,
+      "skipped": 45,
+      "failure_rate_decisive_runs": 0.0
+    },
+    {
+      "workflow": "GitHub Actions Security Analysis with zizmor \ud83c\udf08",
+      "observed_runs": 36,
+      "success": 36,
+      "failure": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "failure_rate_decisive_runs": 0.0
+    },
+    {
+      "workflow": "Comment Commands",
+      "observed_runs": 36,
+      "success": 1,
+      "failure": 0,
+      "cancelled": 0,
+      "skipped": 35,
+      "failure_rate_decisive_runs": 0.0
+    },
+    {
+      "workflow": "Deprecations Bot",
+      "observed_runs": 6,
+      "success": 6,
+      "failure": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "failure_rate_decisive_runs": 0.0
+    },
+    {
+      "workflow": "Issue and PR maintenance",
+      "observed_runs": 4,
+      "success": 0,
+      "failure": 0,
+      "cancelled": 0,
+      "skipped": 4,
+      "failure_rate_decisive_runs": ""
+    }
+  ]
+}
