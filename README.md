@@ -29,10 +29,10 @@ These are triage signatures, not diagnosed root causes. A step named “Test” 
 
 ## Engineering design
 
-- Acquisition uses the official API through authenticated `gh` requests.
+- Acquisition uses the official API through authenticated `gh` requests and follows job pagination until GitHub's reported `total_count` is reached.
 - The snapshot stores only public workflow, job, and step metadata; logs are deliberately excluded.
 - Source files are hash-verified before analysis.
-- Duplicate run IDs fail validation.
+- Duplicate run/job IDs, incomplete failed-run coverage, per-run count mismatches, and failed jobs without a failed step fail validation.
 - Skipped and cancelled runs remain distinct from successes and failures.
 - Workflow failure rates use only decisive outcomes in the denominator.
 - First-failed-step extraction follows step sequence, avoiding arbitrary selection from later cleanup failures.
@@ -56,7 +56,7 @@ The checked-in snapshot makes validation and analysis reproducible without API a
 - Run `updated_at - run_started_at` is an API-level elapsed duration, not billed runner time.
 - A failed matrix workflow can produce many failed jobs, so run-level and job-level counts are never combined.
 - No root cause, flakiness, ownership, or remediation is asserted without logs and repeated-run evidence.
-- No synthetic workflows, failures, logs, or labels are present.
+- No generated workflow records, failures, logs, or labels are present. Tests query the checked-in public snapshot.
 
 ## Repository map
 
